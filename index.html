@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rec Privacy Policy</title>
+<meta name="description" content="Privacy policy for Rec: Voice Recorder Pro (Android, iOS, Wear OS, Apple Watch).">
+<style>
+  :root {
+    --bg: #ffffff; --text: #1c1c1e; --muted: #5f6368; --line: #e3e3e6; --accent: #c62828; --code: #f4f4f6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #121214; --text: #ececee; --muted: #a2a2a8; --line: #2c2c30; --accent: #ef5350; --code: #1e1e22; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  nav { display: flex; gap: 16px; font-size: 15px; margin-bottom: 24px; }
+  a { color: var(--accent); }
+  h1 { font-size: 28px; line-height: 1.25; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0 0 24px; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 56px 0; }
+  code { background: var(--code); padding: 1px 5px; border-radius: 4px; font-size: 14px; }
+  .table { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  th { font-weight: 600; }
+  ul { padding-left: 22px; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="#en">English</a><a href="#tr">Türkçe</a></nav>
+
+<article id="en" lang="en">
+<h1>Rec Privacy Policy</h1>
+<p class="meta">Rec: Voice Recorder Pro · Android, iOS, Wear OS and Apple Watch · Last updated: 28 October 2026</p>
+
+<p>Rec is developed by Taner Özel, an individual developer (“I”, “me”). This policy explains what the app does with your
+data. Contact: <a href="mailto:tanerozel47@gmail.com">tanerozel47@gmail.com</a>.</p>
+
+<h2>Summary</h2>
+<p>Rec works without an account. Your recordings, transcripts, marks, notes and settings are stored on your device. The app
+contains no advertising or analytics software and never sends your data to me. It uses the internet only to download
+speech models (no personal data is sent) and, if you turn it on, to back up recordings to the storage you choose.</p>
+
+<h2>What the app handles</h2>
+<div class="table"><table>
+<tr><th>Data</th><th>Purpose</th><th>Where it stays</th></tr>
+<tr><td>Audio you record</td><td>Recording and playback</td><td>The app’s private storage on your device</td></tr>
+<tr><td>Titles, notes, marks, collections, favorites</td><td>Organizing and searching</td><td>On-device database</td></tr>
+<tr><td>Transcripts and speaker labels</td><td>Reading and searching recordings</td><td>On-device database</td></tr>
+<tr><td>Settings</td><td>Remembering your preferences</td><td>On your device (see “Device backups”)</td></tr>
+</table></div>
+<p>The microphone is used only while you record, and the system always shows that a recording is in progress (a
+notification on Android, the microphone indicator and Live Activity on iOS). Rec does not record phone calls.</p>
+
+<h2>Transcription and speaker labels</h2>
+<p>Transcription and speaker labelling (“Speaker 1”, “Speaker 2” and names you give them) run entirely on your device.
+Speaker labels compare voices within one recording only: Rec doesn’t build voice profiles, doesn’t recognise people
+across recordings and doesn’t send voice data anywhere. Labels and names are stored with the transcript and deleted with
+the recording.</p>
+<p>Speech models are downloaded from Hugging Face (<code>huggingface.co</code>) when you choose to. No recordings or
+personal data are sent; as with any download, that server receives your device’s IP address.</p>
+
+<h2>Watch apps</h2>
+<p>The Wear OS and Apple Watch apps only control the recorder on your phone. They exchange commands and the recording’s
+state (recording or paused, elapsed time, number of marks) with your phone through Google’s or Apple’s watch connection.
+No audio or titles are exchanged, and nothing is sent to me.</p>
+
+<h2>Sharing</h2>
+<p>Audio leaves the app only when you use <strong>Share</strong> or <strong>Save a copy</strong>, or when you turn on
+<strong>Cloud backup</strong> or use <strong>Save to cloud</strong>. The app or place you choose then handles it under its
+own policy.</p>
+
+<h2>Cloud backup (optional, off by default)</h2>
+<p>If you choose a backup destination, Rec copies the recordings you back up (and, if you turn it on, their transcripts as
+text files) to that destination only:</p>
+<ul>
+<li><strong>A folder you pick</strong> on Android or in the iOS Files app (for example iCloud Drive, or a folder of the
+Google Drive, OneDrive or Dropbox app). That provider’s app syncs it.</li>
+<li><strong>Google Drive</strong> (Android): Rec asks Google for access only to the files it creates, in a “Rec” folder.</li>
+<li><strong>Dropbox</strong> or <strong>Microsoft OneDrive</strong>: Rec gets access only to its own app folder
+(<code>Apps/Rec</code>). You sign in on their page; Rec keeps only an access token for that folder, encrypted on your
+device (Android Keystore / iOS Keychain), and deletes it when you stop backing up. Dropbox shows Rec your account’s
+e-mail address, which is displayed in the app and not sent anywhere.</li>
+<li><strong>Your own WebDAV server</strong> (for example Nextcloud, ownCloud or a NAS): Rec connects only to the HTTPS
+address you enter and keeps your password encrypted on your device; it is deleted when you change or remove the server.</li>
+</ul>
+<p>Copies are stored by the provider you chose under its own terms (for example Google’s, Apple’s, Dropbox’s or
+Microsoft’s privacy policy), or by the operator of your WebDAV server. Rec never deletes files there: removing a recording
+or turning backup off doesn’t remove copies already made, so delete them in that service. I never receive them.</p>
+
+<h2>Device backups</h2>
+<ul>
+<li><strong>Android:</strong> Google’s cloud backup includes only your settings; recordings and their data are excluded.
+A device-to-device transfer while setting up a new phone may copy all app data to it.</li>
+<li><strong>iOS:</strong> Recordings, their data and settings are part of your iPhone backup (iCloud Backup or a computer
+backup), like other app data, so they can be restored to a new iPhone.</li>
+</ul>
+
+<h2>Deleting your data</h2>
+<p>Delete recordings in the app. They stay in “Recently deleted” for 30 days, or you can delete them forever there.
+Uninstalling the app or clearing its storage removes everything on the device. Because I don’t receive or store your
+data, there is nothing for me to delete on my side; copies in your own cloud storage are managed there.</p>
+
+<h2>Your rights</h2>
+<p>Depending on where you live (for example under the GDPR in the EU or KVKK in Türkiye), you have rights to access,
+correct and delete personal data. Rec keeps your data on your device and under your control, and I don’t hold any of it.
+For any privacy question, write to <a href="mailto:tanerozel47@gmail.com">tanerozel47@gmail.com</a>.</p>
+
+<h2>Children</h2>
+<p>Rec is not directed at children under 13.</p>
+
+<h2>Changes</h2>
+<p>I will update this policy before releasing features that change how data is handled (for example in-app purchases),
+and change the date at the top.</p>
+</article>
+
+<hr>
+
+<article id="tr" lang="tr">
+<h1>Rec Gizlilik Politikası</h1>
+<p class="meta">Rec: Voice Recorder Pro · Android, iOS, Wear OS ve Apple Watch · Son güncelleme: 28 Ekim 2026</p>
+
+<p>Rec, bireysel geliştirici Taner Özel tarafından geliştirilmektedir. Bu politika, uygulamanın verilerinizle ne yaptığını
+açıklar. İletişim: <a href="mailto:tanerozel47@gmail.com">tanerozel47@gmail.com</a>.</p>
+
+<h2>Özet</h2>
+<p>Rec hesap gerektirmez. Kayıtlarınız, metinleriniz, işaretleriniz, notlarınız ve ayarlarınız cihazınızda saklanır.
+Uygulamada reklam veya analiz yazılımı yoktur ve verileriniz bana asla gönderilmez. İnternet yalnızca konuşma modellerini
+indirmek için (kişisel veri gönderilmez) ve siz açarsanız kayıtları seçtiğiniz depolama alanına yedeklemek için
+kullanılır.</p>
+
+<h2>Uygulamanın işlediği veriler</h2>
+<div class="table"><table>
+<tr><th>Veri</th><th>Amaç</th><th>Nerede kalır</th></tr>
+<tr><td>Kaydettiğiniz ses</td><td>Kayıt ve oynatma</td><td>Cihazınızda, uygulamanın özel depolama alanında</td></tr>
+<tr><td>Başlıklar, notlar, işaretler, koleksiyonlar, favoriler</td><td>Düzenleme ve arama</td><td>Cihazdaki veritabanında</td></tr>
+<tr><td>Metinler ve konuşmacı etiketleri</td><td>Kayıtları okuma ve arama</td><td>Cihazdaki veritabanında</td></tr>
+<tr><td>Ayarlar</td><td>Tercihlerinizi hatırlama</td><td>Cihazınızda (bkz. “Cihaz yedekleri”)</td></tr>
+</table></div>
+<p>Mikrofon yalnızca siz kayıt yaparken kullanılır ve sistem kayıt yapıldığını her zaman gösterir (Android’de bildirim,
+iOS’ta mikrofon göstergesi ve Canlı Etkinlik). Rec telefon görüşmelerini kaydetmez.</p>
+
+<h2>Yazıya dökme ve konuşmacı etiketleri</h2>
+<p>Yazıya dökme ve konuşmacı etiketleme (“Konuşmacı 1”, “Konuşmacı 2” ve sizin verdiğiniz adlar) tamamen cihazınızda
+çalışır. Konuşmacı etiketleri yalnızca tek bir kayıttaki sesleri karşılaştırır: Rec ses profili oluşturmaz, kişileri
+kayıtlar arasında tanımaz ve ses verisini hiçbir yere göndermez. Etiketler ve adlar metinle birlikte saklanır ve kayıtla
+birlikte silinir.</p>
+<p>Konuşma modelleri, siz istediğinizde Hugging Face’ten (<code>huggingface.co</code>) indirilir. Kayıt veya kişisel veri
+gönderilmez; her indirmede olduğu gibi bu sunucu cihazınızın IP adresini görür.</p>
+
+<h2>Saat uygulamaları</h2>
+<p>Wear OS ve Apple Watch uygulamaları yalnızca telefonunuzdaki kaydediciyi kontrol eder. Telefonunuzla Google’ın veya
+Apple’ın saat bağlantısı üzerinden komutları ve kaydın durumunu (kayıt ya da duraklatıldı, geçen süre, işaret sayısı)
+paylaşır. Ses veya başlık paylaşılmaz ve bana hiçbir şey gönderilmez.</p>
+
+<h2>Paylaşma</h2>
+<p>Ses uygulamadan yalnızca <strong>Paylaş</strong> veya <strong>Kopyasını kaydet</strong>’i kullandığınızda ya da
+<strong>Bulut yedekleme</strong>’yi açtığınızda veya <strong>Buluta kaydet</strong>’i kullandığınızda çıkar. Seçtiğiniz
+uygulama veya konum onu kendi politikasına göre işler.</p>
+
+<h2>Bulut yedekleme (isteğe bağlı, varsayılan olarak kapalı)</h2>
+<p>Bir yedekleme hedefi seçerseniz Rec, yedeklediğiniz kayıtları (ve açarsanız metinlerini metin dosyası olarak) yalnızca o
+hedefe kopyalar:</p>
+<ul>
+<li><strong>Seçtiğiniz bir klasör</strong> (Android’de veya iOS Dosyalar uygulamasında; örneğin iCloud Drive ya da Google
+Drive, OneDrive veya Dropbox uygulamasının bir klasörü). Senkronizasyonu o sağlayıcının uygulaması yapar.</li>
+<li><strong>Google Drive</strong> (Android): Rec, Google’dan yalnızca kendi oluşturduğu dosyalara, bir “Rec” klasöründe
+erişim ister.</li>
+<li><strong>Dropbox</strong> veya <strong>Microsoft OneDrive</strong>: Rec yalnızca kendi uygulama klasörüne
+(<code>Uygulamalar/Rec</code>) erişir. Oturumu onların sayfasında açarsınız; Rec yalnızca bu klasör için bir erişim
+anahtarını cihazınızda şifreli olarak (Android Keystore / iOS Anahtar Zinciri) saklar ve yedeklemeyi bıraktığınızda
+siler. Dropbox, hesabınızın e-posta adresini Rec’e gösterir; bu adres uygulamada görüntülenir ve hiçbir yere
+gönderilmez.</li>
+<li><strong>Kendi WebDAV sunucunuz</strong> (örneğin Nextcloud, ownCloud veya bir NAS): Rec yalnızca girdiğiniz HTTPS
+adresine bağlanır ve parolanızı cihazınızda şifreli olarak saklar; sunucuyu değiştirdiğinizde veya kaldırdığınızda parola
+silinir.</li>
+</ul>
+<p>Kopyaları, seçtiğiniz sağlayıcı kendi koşullarına göre (örneğin Google’ın, Apple’ın, Dropbox’ın veya Microsoft’un
+gizlilik politikası) ya da WebDAV sunucunuzun işletmecisi saklar. Rec oradaki dosyaları asla silmez: bir kaydı silmek veya
+yedeklemeyi kapatmak önceden yapılmış kopyaları kaldırmaz, onları o hizmette silmeniz gerekir. Bu kopyalar bana asla
+ulaşmaz.</p>
+
+<h2>Cihaz yedekleri</h2>
+<ul>
+<li><strong>Android:</strong> Google’ın bulut yedeklemesi yalnızca ayarlarınızı içerir; kayıtlar ve verileri hariç tutulur.
+Yeni bir telefon kurarken yapılan cihazdan cihaza aktarım tüm uygulama verilerini yeni telefona kopyalayabilir.</li>
+<li><strong>iOS:</strong> Kayıtlar, verileri ve ayarlar diğer uygulama verileri gibi iPhone yedeğinize (iCloud Yedekleme
+veya bilgisayar yedeği) dahildir; bu sayede yeni bir iPhone’a geri yüklenebilir.</li>
+</ul>
+
+<h2>Verilerinizi silme</h2>
+<p>Kayıtları uygulamada silin. Silinen kayıtlar 30 gün boyunca “Son silinenler”de kalır; isterseniz orada kalıcı olarak
+silebilirsiniz. Uygulamayı kaldırmak veya depolama alanını temizlemek cihazdaki her şeyi siler. Verilerinizi almadığım ve
+saklamadığım için benim tarafımda silinecek bir şey yoktur; kendi bulut depolamanızdaki kopyaları orada yönetirsiniz.</p>
+
+<h2>Haklarınız</h2>
+<p>Yaşadığınız yere göre (örneğin Türkiye’de KVKK, AB’de GDPR kapsamında) kişisel verilerinize erişme, onları düzeltme ve
+silme haklarına sahipsiniz. Rec verilerinizi cihazınızda ve sizin kontrolünüzde tutar; bende bu verilerin hiçbiri yoktur.
+Gizlilikle ilgili her türlü soru için <a href="mailto:tanerozel47@gmail.com">tanerozel47@gmail.com</a> adresine
+yazabilirsiniz.</p>
+
+<h2>Çocuklar</h2>
+<p>Rec, 13 yaşın altındaki çocuklara yönelik değildir.</p>
+
+<h2>Değişiklikler</h2>
+<p>Verilerin işlenme biçimini değiştiren özellikleri (örneğin uygulama içi satın alma) yayınlamadan önce bu politikayı
+güncelleyeceğim ve en üstteki tarihi değiştireceğim.</p>
+</article>
+</main>
+</body>
+</html>
